@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D350D1261950DFE300D0752E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D350D1251950DFE300D0752E /* Foundation.framework */; };
+		D350D1281950DFE300D0752E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D350D1271950DFE300D0752E /* CoreGraphics.framework */; };
+		D350D12A1950DFE300D0752E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D350D1291950DFE300D0752E /* UIKit.framework */; };
+		D350D12C1950DFE300D0752E /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D350D12B1950DFE300D0752E /* SpriteKit.framework */; };
+		D350D1321950DFE300D0752E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D350D1301950DFE300D0752E /* InfoPlist.strings */; };
+		D350D1341950DFE300D0752E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D350D1331950DFE300D0752E /* main.m */; };
+		D350D1381950DFE300D0752E /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D350D1371950DFE300D0752E /* BIDAppDelegate.m */; };
+		D350D13B1950DFE300D0752E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D350D1391950DFE300D0752E /* Main.storyboard */; };
+		D350D13E1950DFE300D0752E /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D350D13D1950DFE300D0752E /* BIDViewController.m */; };
+		D350D1411950DFE300D0752E /* BIDMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D350D1401950DFE300D0752E /* BIDMyScene.m */; };
+		D350D1451950DFE300D0752E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D350D1441950DFE300D0752E /* Images.xcassets */; };
+		D350D14C1950DFE300D0752E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D350D14B1950DFE300D0752E /* XCTest.framework */; };
+		D350D14D1950DFE300D0752E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D350D1251950DFE300D0752E /* Foundation.framework */; };
+		D350D14E1950DFE300D0752E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D350D1291950DFE300D0752E /* UIKit.framework */; };
+		D350D1561950DFE300D0752E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D350D1541950DFE300D0752E /* InfoPlist.strings */; };
+		D350D1581950DFE300D0752E /* PongSKGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D350D1571950DFE300D0752E /* PongSKGameTests.m */; };
+		D350D1621950E00200D0752E /* paddle.png in Resources */ = {isa = PBXBuildFile; fileRef = D350D1611950E00200D0752E /* paddle.png */; };
+		D350D1641950E4B500D0752E /* UpArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = D350D1631950E4B500D0752E /* UpArrow.png */; };
+		D350D1681950EE6500D0752E /* BIDPaddleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D350D1671950EE6500D0752E /* BIDPaddleNode.m */; };
+		D350D16A1950FC8700D0752E /* Ball.png in Resources */ = {isa = PBXBuildFile; fileRef = D350D1691950FC8700D0752E /* Ball.png */; };
+		D350D16D1950FCBD00D0752E /* BIDBallNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D350D16C1950FCBD00D0752E /* BIDBallNode.m */; };
+		D350D17519510D9200D0752E /* BIDGoalWallNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D350D17419510D9200D0752E /* BIDGoalWallNode.m */; };
+		D350D17719511C6E00D0752E /* wall.png in Resources */ = {isa = PBXBuildFile; fileRef = D350D17619511C6E00D0752E /* wall.png */; };
+		D350D17919511C7500D0752E /* goal.png in Resources */ = {isa = PBXBuildFile; fileRef = D350D17819511C7500D0752E /* goal.png */; };
+		D350D1821951447900D0752E /* BIDGameOverScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = D350D1811951447900D0752E /* BIDGameOverScreen.m */; };
+		D350D18519514E3200D0752E /* BIDIntroScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = D350D18419514E3200D0752E /* BIDIntroScreen.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D350D14F1950DFE300D0752E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D350D11A1950DFE300D0752E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D350D1211950DFE300D0752E;
+			remoteInfo = PongSKGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D350D1221950DFE300D0752E /* PongSKGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PongSKGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D350D1251950DFE300D0752E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D350D1271950DFE300D0752E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D350D1291950DFE300D0752E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D350D12B1950DFE300D0752E /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		D350D12F1950DFE300D0752E /* PongSKGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PongSKGame-Info.plist"; sourceTree = "<group>"; };
+		D350D1311950DFE300D0752E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D350D1331950DFE300D0752E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D350D1351950DFE300D0752E /* PongSKGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PongSKGame-Prefix.pch"; sourceTree = "<group>"; };
+		D350D1361950DFE300D0752E /* BIDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDAppDelegate.h; sourceTree = "<group>"; };
+		D350D1371950DFE300D0752E /* BIDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDAppDelegate.m; sourceTree = "<group>"; };
+		D350D13A1950DFE300D0752E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D350D13C1950DFE300D0752E /* BIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDViewController.h; sourceTree = "<group>"; };
+		D350D13D1950DFE300D0752E /* BIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
+		D350D13F1950DFE300D0752E /* BIDMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDMyScene.h; sourceTree = "<group>"; };
+		D350D1401950DFE300D0752E /* BIDMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDMyScene.m; sourceTree = "<group>"; };
+		D350D1441950DFE300D0752E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D350D14A1950DFE300D0752E /* PongSKGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PongSKGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D350D14B1950DFE300D0752E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D350D1531950DFE300D0752E /* PongSKGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PongSKGameTests-Info.plist"; sourceTree = "<group>"; };
+		D350D1551950DFE300D0752E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D350D1571950DFE300D0752E /* PongSKGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PongSKGameTests.m; sourceTree = "<group>"; };
+		D350D1611950E00200D0752E /* paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paddle.png; sourceTree = "<group>"; };
+		D350D1631950E4B500D0752E /* UpArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpArrow.png; sourceTree = "<group>"; };
+		D350D1651950EBF900D0752E /* BIDGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDGeometry.h; sourceTree = "<group>"; };
+		D350D1661950EE6500D0752E /* BIDPaddleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDPaddleNode.h; sourceTree = "<group>"; };
+		D350D1671950EE6500D0752E /* BIDPaddleNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDPaddleNode.m; sourceTree = "<group>"; };
+		D350D1691950FC8700D0752E /* Ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ball.png; sourceTree = "<group>"; };
+		D350D16B1950FCBD00D0752E /* BIDBallNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDBallNode.h; sourceTree = "<group>"; };
+		D350D16C1950FCBD00D0752E /* BIDBallNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDBallNode.m; sourceTree = "<group>"; };
+		D350D16E1950FD8100D0752E /* BIDPhysicsCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDPhysicsCategories.h; sourceTree = "<group>"; };
+		D350D17319510D9200D0752E /* BIDGoalWallNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDGoalWallNode.h; sourceTree = "<group>"; };
+		D350D17419510D9200D0752E /* BIDGoalWallNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDGoalWallNode.m; sourceTree = "<group>"; };
+		D350D17619511C6E00D0752E /* wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wall.png; sourceTree = "<group>"; };
+		D350D17819511C7500D0752E /* goal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goal.png; sourceTree = "<group>"; };
+		D350D1801951447900D0752E /* BIDGameOverScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDGameOverScreen.h; sourceTree = "<group>"; };
+		D350D1811951447900D0752E /* BIDGameOverScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDGameOverScreen.m; sourceTree = "<group>"; };
+		D350D18319514E3200D0752E /* BIDIntroScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDIntroScreen.h; sourceTree = "<group>"; };
+		D350D18419514E3200D0752E /* BIDIntroScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDIntroScreen.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D350D11F1950DFE300D0752E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D350D1281950DFE300D0752E /* CoreGraphics.framework in Frameworks */,
+				D350D12A1950DFE300D0752E /* UIKit.framework in Frameworks */,
+				D350D12C1950DFE300D0752E /* SpriteKit.framework in Frameworks */,
+				D350D1261950DFE300D0752E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D350D1471950DFE300D0752E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D350D14C1950DFE300D0752E /* XCTest.framework in Frameworks */,
+				D350D14E1950DFE300D0752E /* UIKit.framework in Frameworks */,
+				D350D14D1950DFE300D0752E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D350D1191950DFE300D0752E = {
+			isa = PBXGroup;
+			children = (
+				D350D12D1950DFE300D0752E /* PongSKGame */,
+				D350D1511950DFE300D0752E /* PongSKGameTests */,
+				D350D1241950DFE300D0752E /* Frameworks */,
+				D350D1231950DFE300D0752E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D350D1231950DFE300D0752E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D350D1221950DFE300D0752E /* PongSKGame.app */,
+				D350D14A1950DFE300D0752E /* PongSKGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D350D1241950DFE300D0752E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D350D1251950DFE300D0752E /* Foundation.framework */,
+				D350D1271950DFE300D0752E /* CoreGraphics.framework */,
+				D350D1291950DFE300D0752E /* UIKit.framework */,
+				D350D12B1950DFE300D0752E /* SpriteKit.framework */,
+				D350D14B1950DFE300D0752E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D350D12D1950DFE300D0752E /* PongSKGame */ = {
+			isa = PBXGroup;
+			children = (
+				D350D1361950DFE300D0752E /* BIDAppDelegate.h */,
+				D350D1371950DFE300D0752E /* BIDAppDelegate.m */,
+				D350D1391950DFE300D0752E /* Main.storyboard */,
+				D350D13C1950DFE300D0752E /* BIDViewController.h */,
+				D350D13D1950DFE300D0752E /* BIDViewController.m */,
+				D350D187195153C700D0752E /* Images */,
+				D350D16F19510D1400D0752E /* Objects */,
+				D350D188195153F400D0752E /* Reference .h Files */,
+				D350D186195153AE00D0752E /* Scenes */,
+				D350D1441950DFE300D0752E /* Images.xcassets */,
+				D350D12E1950DFE300D0752E /* Supporting Files */,
+			);
+			path = PongSKGame;
+			sourceTree = "<group>";
+		};
+		D350D12E1950DFE300D0752E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D350D12F1950DFE300D0752E /* PongSKGame-Info.plist */,
+				D350D1301950DFE300D0752E /* InfoPlist.strings */,
+				D350D1331950DFE300D0752E /* main.m */,
+				D350D1351950DFE300D0752E /* PongSKGame-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D350D1511950DFE300D0752E /* PongSKGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				D350D1571950DFE300D0752E /* PongSKGameTests.m */,
+				D350D1521950DFE300D0752E /* Supporting Files */,
+			);
+			path = PongSKGameTests;
+			sourceTree = "<group>";
+		};
+		D350D1521950DFE300D0752E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D350D1531950DFE300D0752E /* PongSKGameTests-Info.plist */,
+				D350D1541950DFE300D0752E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D350D16F19510D1400D0752E /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				D350D17319510D9200D0752E /* BIDGoalWallNode.h */,
+				D350D16C1950FCBD00D0752E /* BIDBallNode.m */,
+				D350D16B1950FCBD00D0752E /* BIDBallNode.h */,
+				D350D1661950EE6500D0752E /* BIDPaddleNode.h */,
+				D350D1671950EE6500D0752E /* BIDPaddleNode.m */,
+				D350D17419510D9200D0752E /* BIDGoalWallNode.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		D350D186195153AE00D0752E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D350D13F1950DFE300D0752E /* BIDMyScene.h */,
+				D350D1401950DFE300D0752E /* BIDMyScene.m */,
+				D350D18319514E3200D0752E /* BIDIntroScreen.h */,
+				D350D18419514E3200D0752E /* BIDIntroScreen.m */,
+				D350D1801951447900D0752E /* BIDGameOverScreen.h */,
+				D350D1811951447900D0752E /* BIDGameOverScreen.m */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		D350D187195153C700D0752E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D350D1611950E00200D0752E /* paddle.png */,
+				D350D17619511C6E00D0752E /* wall.png */,
+				D350D17819511C7500D0752E /* goal.png */,
+				D350D1631950E4B500D0752E /* UpArrow.png */,
+				D350D1691950FC8700D0752E /* Ball.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		D350D188195153F400D0752E /* Reference .h Files */ = {
+			isa = PBXGroup;
+			children = (
+				D350D1651950EBF900D0752E /* BIDGeometry.h */,
+				D350D16E1950FD8100D0752E /* BIDPhysicsCategories.h */,
+			);
+			name = "Reference .h Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D350D1211950DFE300D0752E /* PongSKGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D350D15B1950DFE300D0752E /* Build configuration list for PBXNativeTarget "PongSKGame" */;
+			buildPhases = (
+				D350D11E1950DFE300D0752E /* Sources */,
+				D350D11F1950DFE300D0752E /* Frameworks */,
+				D350D1201950DFE300D0752E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PongSKGame;
+			productName = PongSKGame;
+			productReference = D350D1221950DFE300D0752E /* PongSKGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D350D1491950DFE300D0752E /* PongSKGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D350D15E1950DFE300D0752E /* Build configuration list for PBXNativeTarget "PongSKGameTests" */;
+			buildPhases = (
+				D350D1461950DFE300D0752E /* Sources */,
+				D350D1471950DFE300D0752E /* Frameworks */,
+				D350D1481950DFE300D0752E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D350D1501950DFE300D0752E /* PBXTargetDependency */,
+			);
+			name = PongSKGameTests;
+			productName = PongSKGameTests;
+			productReference = D350D14A1950DFE300D0752E /* PongSKGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D350D11A1950DFE300D0752E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BID;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Delta College";
+				TargetAttributes = {
+					D350D1211950DFE300D0752E = {
+						DevelopmentTeam = 7DD954Y9ZG;
+					};
+					D350D1491950DFE300D0752E = {
+						TestTargetID = D350D1211950DFE300D0752E;
+					};
+				};
+			};
+			buildConfigurationList = D350D11D1950DFE300D0752E /* Build configuration list for PBXProject "PongSKGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D350D1191950DFE300D0752E;
+			productRefGroup = D350D1231950DFE300D0752E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D350D1211950DFE300D0752E /* PongSKGame */,
+				D350D1491950DFE300D0752E /* PongSKGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D350D1201950DFE300D0752E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D350D1641950E4B500D0752E /* UpArrow.png in Resources */,
+				D350D1321950DFE300D0752E /* InfoPlist.strings in Resources */,
+				D350D17919511C7500D0752E /* goal.png in Resources */,
+				D350D1621950E00200D0752E /* paddle.png in Resources */,
+				D350D17719511C6E00D0752E /* wall.png in Resources */,
+				D350D16A1950FC8700D0752E /* Ball.png in Resources */,
+				D350D1451950DFE300D0752E /* Images.xcassets in Resources */,
+				D350D13B1950DFE300D0752E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D350D1481950DFE300D0752E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D350D1561950DFE300D0752E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D350D11E1950DFE300D0752E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D350D16D1950FCBD00D0752E /* BIDBallNode.m in Sources */,
+				D350D1381950DFE300D0752E /* BIDAppDelegate.m in Sources */,
+				D350D13E1950DFE300D0752E /* BIDViewController.m in Sources */,
+				D350D18519514E3200D0752E /* BIDIntroScreen.m in Sources */,
+				D350D1821951447900D0752E /* BIDGameOverScreen.m in Sources */,
+				D350D17519510D9200D0752E /* BIDGoalWallNode.m in Sources */,
+				D350D1411950DFE300D0752E /* BIDMyScene.m in Sources */,
+				D350D1681950EE6500D0752E /* BIDPaddleNode.m in Sources */,
+				D350D1341950DFE300D0752E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D350D1461950DFE300D0752E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D350D1581950DFE300D0752E /* PongSKGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D350D1501950DFE300D0752E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D350D1211950DFE300D0752E /* PongSKGame */;
+			targetProxy = D350D14F1950DFE300D0752E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D350D1301950DFE300D0752E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D350D1311950DFE300D0752E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D350D1391950DFE300D0752E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D350D13A1950DFE300D0752E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D350D1541950DFE300D0752E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D350D1551950DFE300D0752E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D350D1591950DFE300D0752E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D350D15A1950DFE300D0752E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D350D15C1950DFE300D0752E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PongSKGame/PongSKGame-Prefix.pch";
+				INFOPLIST_FILE = "PongSKGame/PongSKGame-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = zduford.ios.PongSKGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D350D15D1950DFE300D0752E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PongSKGame/PongSKGame-Prefix.pch";
+				INFOPLIST_FILE = "PongSKGame/PongSKGame-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = zduford.ios.PongSKGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D350D15F1950DFE300D0752E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PongSKGame.app/PongSKGame";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PongSKGame/PongSKGame-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PongSKGameTests/PongSKGameTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.delta.cst184.zackeryduford.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D350D1601950DFE300D0752E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PongSKGame.app/PongSKGame";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PongSKGame/PongSKGame-Prefix.pch";
+				INFOPLIST_FILE = "PongSKGameTests/PongSKGameTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.delta.cst184.zackeryduford.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D350D11D1950DFE300D0752E /* Build configuration list for PBXProject "PongSKGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D350D1591950DFE300D0752E /* Debug */,
+				D350D15A1950DFE300D0752E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D350D15B1950DFE300D0752E /* Build configuration list for PBXNativeTarget "PongSKGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D350D15C1950DFE300D0752E /* Debug */,
+				D350D15D1950DFE300D0752E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D350D15E1950DFE300D0752E /* Build configuration list for PBXNativeTarget "PongSKGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D350D15F1950DFE300D0752E /* Debug */,
+				D350D1601950DFE300D0752E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D350D11A1950DFE300D0752E /* Project object */;
+}
