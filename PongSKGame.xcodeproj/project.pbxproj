@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D222E531BC24DD400BC6F83 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6D222E521BC24DD400BC6F83 /* LICENSE.txt */; settings = {ASSET_TAGS = (); }; };
 		D350D1261950DFE300D0752E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D350D1251950DFE300D0752E /* Foundation.framework */; };
 		D350D1281950DFE300D0752E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D350D1271950DFE300D0752E /* CoreGraphics.framework */; };
 		D350D12A1950DFE300D0752E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D350D1291950DFE300D0752E /* UIKit.framework */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D222E521BC24DD400BC6F83 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		D350D1221950DFE300D0752E /* PongSKGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PongSKGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D350D1251950DFE300D0752E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D350D1271950DFE300D0752E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,6 +117,7 @@
 		D350D1191950DFE300D0752E = {
 			isa = PBXGroup;
 			children = (
+				6D222E521BC24DD400BC6F83 /* LICENSE.txt */,
 				D350D12D1950DFE300D0752E /* PongSKGame */,
 				D350D1511950DFE300D0752E /* PongSKGameTests */,
 				D350D1241950DFE300D0752E /* Frameworks */,
@@ -320,6 +323,7 @@
 				D350D1641950E4B500D0752E /* UpArrow.png in Resources */,
 				D350D1321950DFE300D0752E /* InfoPlist.strings in Resources */,
 				D350D17919511C7500D0752E /* goal.png in Resources */,
+				6D222E531BC24DD400BC6F83 /* LICENSE.txt in Resources */,
 				D350D1621950E00200D0752E /* paddle.png in Resources */,
 				D350D17719511C6E00D0752E /* wall.png in Resources */,
 				D350D16A1950FC8700D0752E /* Ball.png in Resources */,
